@@ -20,7 +20,6 @@
   "homepage": "https://github.com/ezgibas/roommate-calendar#readme",
   "dependencies": {
     "express": "^4.17.2",
-    "globalize": "^1.7.0",
     "react-big-calendar": "^0.39.0"
   }
 }
