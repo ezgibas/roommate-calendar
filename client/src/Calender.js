@@ -2,10 +2,11 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import reportWebVitals from './reportWebVitals';
-import { Calendar, momentLocalizer } from 'react-big-calendar'
-// import "react-big-calendar/lib/css/react-big-calendar.css"
-import moment from 'moment'
+//import reportWebVitals from './reportWebVitals';
+import { Calendar, momentLocalizer } from "react-big-calendar";
+import moment from "moment";
+import "react-big-calendar/lib/css/react-big-calendar.css"
+
 
 ReactDOM.render(
   <React.StrictMode>
@@ -17,13 +18,12 @@ ReactDOM.render(
 const localizer = momentLocalizer(moment);
 
 export const MyCalendar = props => (
-  <div>
+  <div key="TEST">
     <Calendar
       localizer={localizer}
       events={[]}
       startAccessor="start"
       endAccessor="end"
-      style={{height: 500}}
     />
   </div>
 )
@@ -32,4 +32,4 @@ export const MyCalendar = props => (
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
 // or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
+//reportWebVitals();

@@ -1,9 +1,10 @@
 import logo from './logo.svg';
 import './App.css';
-import { MyCalendar } from '.';
+import { MyCalendar } from './Calender';
 
 function App() {
-  return ( <MyCalendar/>
+  console.log('hello')
+  return ( <div>HELLO<MyCalendar/></div>
     // <div className="App">
     //   <header className="App-header">
     //     <img src={logo} className="App-logo" alt="logo" />
